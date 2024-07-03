@@ -14,7 +14,6 @@ func AcceptLoop(listener net.Listener, config *Config) {
 	for {
 		conn, err := listener.Accept()
 
-		println(0)
 		if err != nil {
 			fmt.Println("Error on accept the server:", err)
 			continue
